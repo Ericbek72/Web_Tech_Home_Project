@@ -1,0 +1,280 @@
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+  margin: 0 auto;
+  place-content: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00baf0;
+  background: linear-gradient(to right, #000000, #646464);
+  color: #fff;
+  height: 50px;
+  padding: 1em;
+  font-weight: lighter;
+}
+.Logo {
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: url("5124-removebg-preview.png") no-repeat 0 0;
+  background-size: 100%;
+  height: 80px;
+  min-width: 110px;
+  max-width: 150px;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 5px 10px;
+}
+
+li > a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  color: #fff;
+}
+
+li > a::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0;
+  top: 5px;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+li > a:hover::after,
+li > a.active-nav::after {
+  width: 100%;
+  background: #ff0000;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  z-index: 11;
+}
+
+.menu li {
+  margin: 0 2em;
+  overflow: hidden;
+}
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.2, 0.8, 0.8, 0.2);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -10px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 10px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background-color: #fff(16, 18, 15);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 750px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 60px;
+    right: 0;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid rgb(141, 23, 23);
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: rgb(254, 0, 0);
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}
+
+.TopImage {
+  display: grid;
+  background-image: url(https://images.homify.com/images/a_0,c_fill,f_auto,h_900,q_auto,w_1920/v1470845934/p/photo/image/1617842/project_3/aziatskiy-gostinaya-photos-in-zheltyy-by-axis-group-of-interior-design.jpg);
+
+  grid-template-columns: repeat(1, 1fr);
+  object-fit: cover;
+  height: 700px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  /*justify-content: center;*/
+  align-content: center;
+  text-align: center;
+  font-size: 7em;
+  color: #fff;
+}
+
+/*Pictures Container*/
+
+.MainContainer {
+  display: grid;
+  grid-auto-rows: 250px;
+  grid-template-columns: repeat(3, 400px); /* 2 */
+  gap: 2em;
+  margin: 30px;
+  /*justify-items: center;*/
+  place-content: center;
+}
+
+.Work.Wide {
+  grid-row: 1 / 1;
+  grid-column: 1 / 4;
+  background-color: #fff;
+  font-size: x-large;
+}
+
+.Work {
+  font-weight: lighter;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  background-color: rgb(255, 113, 47);
+  text-align: center;
+  margin: 20px 30px;
+  background-size: cover;
+}
+.Italy {
+  font-style: italic;
+}
+
+.Work.Image1 {
+  background-image: url(https://i.pinimg.com/originals/c8/40/eb/c840eb17c7bc9e681525c5561604935a.jpg);
+}
+
+.Work.Image2 {
+  background-image: url(http://www.contemporist.com/wp-content/uploads/2019/10/modern-apartment-design-hidden-lighting-111019-1249-01-800x408.jpg);
+}
+
+.Work.Image3 {
+  background-image: url(http://cdn.home-designing.com/wp-content/uploads/2018/01/luxury-living-room.jpg);
+}
+
+.Work.Image4 {
+  background-image: url(https://www.thepinnaclelist.com/wp-content/uploads/2020/12/004-Black-is-Back-Apartment-Interior-Design-Kiev-Ukraine-33bY-Architecture.jpeg);
+}
+
+.Work.Image5 {
+  background-image: url(https://www.recommend.my/blog/wp-content/uploads/2018/06/c5120b9d-8d38-4952-88d7-4b2a32e9fb1a_pasted20image200-1000x662.jpg);
+}
+
+.Work.Image6 {
+  background-image: url(https://i.pinimg.com/originals/e0/83/b6/e083b6aeb140ffc8e32e95fac0e35096.jpg);
+}
+
+.Work.Wide2 {
+  grid-row: 4/ 5;
+  grid-column: 1 / 4;
+  height: 150px;
+  background-color: #fff;
+  font-size: x-large;
+}
+
+.Work.Image7 {
+  background-image: url(https://www.synergyce.com/images/banner-home1.jpg);
+}
+
+.Work.Image8 {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkYxq0k0BwxAYiZryq1Td8QGcEUdrVBPdI6A&usqp=CAU);
+}
+
+.Work.Image9 {
+  background-image: url(https://kreatecube.com/usefull/vendor/35345/gallery/14825.jpg);
+}
+
+.Work.Image10 {
+  background-image: url(https://images.adsttc.com/media/images/6206/cc11/3e4b/3154/d400/000b/newsletter/Andreu_World_1.jpg?1644612620);
+}
+
+.Work.Image11 {
+  background-image: url(https://www.dgicommunications.com/wp-content/uploads/2022/02/office-interior-design--1024x682.jpg);
+}
+.Work.Image12 {
+  background-image: url(https://www.avantisystemsusa.com/wp-content/uploads/2020/07/Screen-Shot-2020-07-08-at-3.08.52-PM.png);
+}
+
+.BottomBox {
+  background: linear-gradient(to right, #646464, #000000);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  line-height: 0px;
+  color: #fff;
+}

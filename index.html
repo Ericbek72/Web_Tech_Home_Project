@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Homework_Project</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="header">
+        <div class="Logo"></div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+          <li><a class="active-nav" href="">HOME</a></li>
+          <li><a href="./Gallery.html">PORTFOLIO</a></li>
+          <li><a href="./Services.html">SERVICES</a></li>
+          <li><a href="">PROCESS</a></li>
+          <li>
+            <a class="button" href="#contacts">CONTACT US</a>
+
+            <div id="popup1" class="overlay">
+              <div class="popup">
+                <h2><a href="#OUR CONTACTS">Here i am</a></h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                  Phone: +64 4 111 2222 <br />
+                  email:decorworks@mail.com
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- Slideshow container -->
+      <div class="carousel">
+        <div class="carousel-inner">
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-1"
+            name="carousel"
+            aria-hidden="true"
+            hidden=""
+            checked="checked"
+          />
+          <div class="carousel-item">
+            <img src="https://www.sailuxurylifestyle.com/images/baner1.jpg" />
+          </div>
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-2"
+            name="carousel"
+            aria-hidden="true"
+            hidden=""
+          />
+          <div class="carousel-item">
+            <img
+              src="https://www.nitidodesign.com/images/02_Featured%20Projects/01_Bombay%20Realty%20ICC%20Towers%20Residence%20-%20Residential%20Interiors%20-%201500%20sq%20ft/watermarked/01.JPG"
+            />
+          </div>
+          <label for="carousel-2" class="carousel-control prev control-1"
+            >‹</label
+          >
+          <label for="carousel-2" class="carousel-control next control-1"
+            >›</label
+          >
+          <label for="carousel-1" class="carousel-control prev control-2"
+            >‹</label
+          >
+          <label for="carousel-1" class="carousel-control next control-2"
+            >›</label
+          >
+          <ol class="carousel-indicators">
+            <li>
+              <label for="carousel-1" class="carousel-bullet">•</label>
+            </li>
+            <li>
+              <label for="carousel-2" class="carousel-bullet">•</label>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="focus"><h2>OUR FOCUS</h2></div>
+      <div class="ContentBox">
+        <div class="BigBox">
+          <p class="BigBoxText">Exclusive Design</p>
+          <h3>Appartments</h3>
+          <button class="RedButton">
+            <a href="Gallery.html">Review Our Works</a>
+          </button>
+        </div>
+        <div class="BigBox img">
+          <p class="BigBoxText">Make Your Dream House come True</p>
+          <h3>Private Houses</h3>
+          <h3>Cottages</h3>
+          <button class="RedButton">
+            <a href="Gallery.html">Review Our Works</a>
+          </button>
+        </div>
+        <div class="BigBox pic">
+          <p class="BigBoxText">Business Solutions</p>
+          <h3>Offices</h3>
+          <h3>Restaurants</h3>
+          <button class="RedButton">
+            <a href="Gallery.html">Review Our Works</a>
+          </button>
+        </div>
+        <div>
+          <h2>
+            <span class="CoName">Decor Works Studio</span> delivers exceptional
+            interior design to elevate your space and exceed your market
+            expectations
+          </h2>
+        </div>
+        <div class="Advantages">
+          <div class="Advantages pic1"></div>
+          <div class="Advantages pic2"></div>
+          <div class="Advantages pic3"></div>
+          <div class="Advantages pic4"></div>
+          <div class="Advantages pic5"></div>
+        </div>
+      </div>
+      <div class="Contacts" id="contacts">
+        <h2>OUR CONTACTS</h2>
+      </div>
+
+      <div class="Contacts">
+        <div id="Contacts">
+          <p>ADDRESS</p>
+          <p>New Zealand</p>
+          <p>Wellington</p>
+          <p>Victoria Street</p>
+        </div>
+        <div id="Contacts">
+          <p>TELEPHONE NUMBERS</p>
+          <p>+64 4 111 2222</p>
+          <p>+64 4 111 2223</p>
+          <p>+64 4 111 2224</p>
+        </div>
+        <div id="Contacts">
+          <p>OUR EMAILS</p>
+          <p>decorworks@mail.com</p>
+          <p>decorworks@mgmail.com</p>
+          <p></p>
+        </div>
+      </div>
+      <div class="Location">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3001.3414540398503!2d174.8925463!3d-41.2143289!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38abac4009a511%3A0xdc00165dc56f13e9!2sHonda%20Service%20Centre%20Lower%20Hutt!5e0!3m2!1sru!2skg!4v1668319216539!5m2!1sru!2skg"
+          width="1200"
+          height="800"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="BottomBox">
+        <h4>ERKIN BEKTENOV</h4>
+        <h5>2025 Assignment</h5>
+      </div>
+    </div>
+  </body>
+</html>
